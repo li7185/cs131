@@ -1,0 +1,106 @@
+    1  passwd
+    2  wget www.github.com
+    3  cd ~/Desktop
+    4  mkdir cs131
+    5  cd cs131/
+    6  git init
+    7  exit
+    8  cd cs131/
+    9  touch work.txt
+   10  ls
+   11  git status
+   12  git commit -m "this is my first commit"
+   13  cd cs131/
+   14  git init
+   15  wget www.github.com
+   16  index.html
+   17  cd index.html
+   18  git remote add origin https://github.com/li7185/cs131.git
+   19  git push -u index
+   20  git push -u index.html
+   21  commit -m "Worksheet1"
+   22  echo "# cs131" >> README.md
+   23  git init
+   24  git add README.md
+   25  git commit -m "first commit"
+   26  git branch -M main
+   27  git remote add origin https://github.com/li7185/cs131.git
+   28  git push -u origin main
+   29  git push -u origin index
+   30  cd cs131/
+   31  ls
+   32  git commit -m "index.html"
+   33  ls
+   34  ls
+   35  cd cs131
+   36  ls
+   37  README.md
+   38  open ~README.md
+   39  open ~/cs131/index.html
+   40  git status
+   41  git remote add origin https://github.com/li7185/cs131.git
+   42  git push -u origin master
+   43  git branch
+   44  master
+   45  git checkout -b<worksheet1>
+   46  git check -b <worksheet1>
+   47  git checkout -n <worksheet1>
+   48  git checkout -b <worksheet1>
+   49  git checkout -b
+   50  git checkout -b worksheet1
+   51  ls
+   52  git push origin worksheet1
+   53  git push -u origin worksheet1
+   54  worksheet1
+   55  git branch
+   56  checkout
+   57  git checkout worksheet1
+   58  git branch
+   59  c
+   60  cd
+   61  git branch
+   62  cd cs131
+   63  ls
+   64  git branch
+   65  cd
+   66  git push origin worksheet1
+   67  git push origin cs131
+   68  cd cs131
+   69  git push origin cs131
+   70  git branch
+   71  cd
+   72  git branch
+   73  ls
+   74  wget www.github.com
+   75  history>cmds.log
+   76  ls
+   77  git remote add origin https://github.com/li7185/cs131.git
+   78  git remote add origin https://github.com/li7185/cs131/tree/4fc9be2c8ad9fcec2025aee5f6854c7cf75c26e0/worksheet1
+   79  git remote add origin https://github.com/li7185/cs131.git
+   80  ls
+   81  cd cs131
+   82  wget www.github.com
+   83  ls
+   84  history>cm.log
+   85  git remote add origin https://github.com/li7185/cs131.git
+   86  push git add .
+   87  git add .
+   88  git commit -m "log and ..."
+   89  git push origin master
+   90  cd
+   91  ls
+   92  rm cs131
+   93  cd cs131
+   94  ls
+   95  rm cm.log
+   96  rm index.html
+   97  rm index.html.1
+   98  rm README.md
+   99  rm work.txt
+  100  cd
+  101  rm cs131
+  102  cd cs131
+  103  ls
+  104  wget www.github.com
+  105  ls
+  106  history>cmds.log
