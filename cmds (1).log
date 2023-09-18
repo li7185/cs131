@@ -1,0 +1,276 @@
+    1  passwd
+    2  wget www.github.com
+    3  cd ~/Desktop
+    4  mkdir cs131
+    5  cd cs131/
+    6  git init
+    7  exit
+    8  cd cs131/
+    9  touch work.txt
+   10  ls
+   11  git status
+   12  git commit -m "this is my first commit"
+   13  cd cs131/
+   14  git init
+   15  wget www.github.com
+   16  index.html
+   17  cd index.html
+   18  git remote add origin https://github.com/li7185/cs131.git
+   19  git push -u index
+   20  git push -u index.html
+   21  commit -m "Worksheet1"
+   22  echo "# cs131" >> README.md
+   23  git init
+   24  git add README.md
+   25  git commit -m "first commit"
+   26  git branch -M main
+   27  git remote add origin https://github.com/li7185/cs131.git
+   28  git push -u origin main
+   29  git push -u origin index
+   30  cd cs131/
+   31  ls
+   32  git commit -m "index.html"
+   33  ls
+   34  ls
+   35  cd cs131
+   36  ls
+   37  README.md
+   38  open ~README.md
+   39  open ~/cs131/index.html
+   40  git status
+   41  git remote add origin https://github.com/li7185/cs131.git
+   42  git push -u origin master
+   43  git branch
+   44  master
+   45  git checkout -b<worksheet1>
+   46  git check -b <worksheet1>
+   47  git checkout -n <worksheet1>
+   48  git checkout -b <worksheet1>
+   49  git checkout -b
+   50  git checkout -b worksheet1
+   51  ls
+   52  git push origin worksheet1
+   53  git push -u origin worksheet1
+   54  worksheet1
+   55  git branch
+   56  checkout
+   57  git checkout worksheet1
+   58  git branch
+   59  c
+   60  cd
+   61  git branch
+   62  cd cs131
+   63  ls
+   64  git branch
+   65  cd
+   66  git push origin worksheet1
+   67  git push origin cs131
+   68  cd cs131
+   69  git push origin cs131
+   70  git branch
+   71  cd
+   72  git branch
+   73  ls
+   74  wget www.github.com
+   75  history>cmds.log
+   76  ls
+   77  git remote add origin https://github.com/li7185/cs131.git
+   78  git remote add origin https://github.com/li7185/cs131/tree/4fc9be2c8ad9fcec2025aee5f6854c7cf75c26e0/worksheet1
+   79  git remote add origin https://github.com/li7185/cs131.git
+   80  ls
+   81  cd cs131
+   82  wget www.github.com
+   83  ls
+   84  history>cm.log
+   85  git remote add origin https://github.com/li7185/cs131.git
+   86  push git add .
+   87  git add .
+   88  git commit -m "log and ..."
+   89  git push origin master
+   90  cd
+   91  ls
+   92  rm cs131
+   93  cd cs131
+   94  ls
+   95  rm cm.log
+   96  rm index.html
+   97  rm index.html.1
+   98  rm README.md
+   99  rm work.txt
+  100  cd
+  101  rm cs131
+  102  cd cs131
+  103  ls
+  104  wget www.github.com
+  105  ls
+  106  history>cmds.log
+  107  git init
+  108  git remote add origin https://github.com/li7185/cs131.git
+  109  git add .
+  110  git commit -m "upload log"
+  111  git config --global user.email "zipeng.li@sjsu.edu"
+  112  git config --global user.name "zipeng li"
+  113  git commit -m "upload log"
+  114  git push origin master
+  115  git checkout -b worksheet1
+  116  cd worksheet1
+  117  git branch
+  118  git push origin worksheet1
+  119  git remote set-url origin https://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@github.com/li7185/cs131
+  120  git push origin worksheet1
+  121  ls
+  122  cd cs131
+  123  ls
+  124  cat id_rsa.pub
+  125  cd
+  126  cat id_rsa.pub
+  127  cd cs131
+  128  git status
+  129  commit status
+  130  branch
+  131  git remote add origin https://github.com/li7185/sampleRepo.git
+  132  cd
+  133  cd ~/.ssh && ssh-keygen
+  134  mkdir ~/.ssh
+  135  cat id_rsa.pub
+  136  cd ~/.ssh && ssh-keygen
+  137  cat id_rsa.pub
+  138  ls
+  139  cd ~/.ssh && ssh-keygen
+  140  cd /mnt/scratch/FA23_CS131_Ashish/zipengf23/.ssh/id_rsa.pub.
+  141  cat id_rsa.pub
+  142  cat i_rsa.pub
+  143  cd ~/.ssh&&ssh-keygen
+  144  cat id_rsa.pub
+  145  cd ~/.ssh&&ssh-keygen
+  146  cat id_rsa.pub
+  147  get remote add origin https://github.com/li7185/cs131.git
+  148  cd worksheet1
+  149  ls
+  150  cd cs131
+  151  git remote add origin https://github.com/li7185/cs131.git
+  152  git status
+  153  cd
+  154  mkdir worksheet1
+  155  ls -ltr
+  156  cd worksheet1
+  157  wget www.github.com
+  158  history>cmds.log
+  159  git init
+  160  git add .
+  161  git status
+  162  git remote add origin https://github.com/li7185/cs131.git
+  163  git commit -m "worksheet1"
+  164  git push --set-upstream origin master
+  165  cd worksheet1
+  166  git remote set-url origin https://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@github.com/li7185/cs131
+  167  git push --set-upstream origin master
+  168  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  169  ls
+  170  vi Global\ YouTube\ Statistics.csv 
+  171  ls
+  172  vim Global\ YouTube\ Statistics.csv 
+  173  grep "United States" Global\ YouTube\ Statistics.csv 
+  174  Grep "Music" Global\ YouTube\ Statistics.csv 
+  175  grep "Music" Global\ YouTube\ Statistics.csv 
+  176  wc -l music_recors.txt > counts.txt
+  177  touch counts.txt
+  178  wc -l music_records.txt > counts.txt
+  179  grep "United States" Global\ YouTube\ Statistics.csv 
+  180  grep "Music" Global\ YouTube\ Statistics.csv > music_records.txt
+  181  wc -l music_records.txt > counts.txt
+  182  wc -w music_records.txt >> counts.txt
+  183  vi counts.txt 
+  184  vi counts.txt
+  185  rm counts.txt 
+  186  rm music_records.txt 
+  187  grep "United States" Global\ YouTube\ Statistics.csv 
+  188  grep "Music" Global\ YouTube\ Statistics.csv > music_records.txt
+  189  wc -l music_records.txt > counts.txt
+  190  wc -w music_records.txt >> counts.txt
+  191  vi counts.txt
+  192  ls
+  193  mkdir worksheet2
+  194  cd worksheet2
+  195  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  196  grep "United States" Global\ YouTube\ Statistics.csv 
+  197  grep "Music" Global\ YouTube\ Statistics.csv > music_records.txt
+  198  wc -l music_records.txt > counts.txt
+  199  wc -w music_records.txt >> counts.txt 
+  200  vi counts.txt 
+  201  history > cmds.log
+  202  git init
+  203  git add.
+  204  git remote add origin https://github.com/li7185/cs131.git
+  205  git commit -m "worksheet2"
+  206  git add .
+  207  git commit -m "worksheet2"
+  208  git push --set-upstream origin master
+  209  git remote set-url origin https://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@github.com/li7185/cs131.git
+  210  git push origin main
+  211  git status
+  212  git push origin main
+  213  initial commit
+  214  ls
+  215  git push origin cmds.log
+  216  git remote set-url origin https://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@github.com/li7185/cs131.git
+  217  git add.
+  218  git add .
+  219  git commit -m "worksheet2"
+  220  git push --set-upstream origin master
+  221  git checkout branch-name
+  222  git branch -m worksheet2
+  223  git push --set-upstream origin master
+  224  git add .
+  225  git commit -m "worksheet2"
+  226  git push origin worksheet2
+  227  ls
+  228  mkdir worksheet3
+  229  cd worksheet3
+  230  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  231  grep "United States" Global\ YouTube\ Statistics.csv | sort -t',' -kX -nr| ls
+  232  ls
+  233  vi Global\ YouTube\ Statistics.csv 
+  234  cd
+  235  rm worksheet3
+  236  cd worksheet3
+  237  ls
+  238  rm Global\ YouTube\ Statistics.csv 
+  239  cd
+  240  rm worksheet3
+  241  cd worksheet3
+  242  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  243  sort -t"," -k8,8 -k16,16nr Global\ YouTube\ Statistics.csv 
+  244  grep -E "United States|United Kingdom|India"
+  245  cd worksheet3
+  246  ls
+  247  sort -t"," k5,5 -k3, 3nr Global\ YouTube\ Statistics.csv > sorted_category.csv
+  248  sort -t"," k5,5 -k3,3nr Global\ YouTube\ Statistics.csv > sorted_category.csv
+  249  sort -t"," -k5,5 -k3,3nr Global\ YouTube\ Statistics.csv > sorted_category.csv
+  250  grep -E "Sports|Education|Entertainment" sorted_category.csv | uniq -f4 | head -3 >> ws3.txt
+  251  ls
+  252  rm ws3.txt 
+  253  rm sorted_data.cvs 
+  254  rm sorted_category.csv 
+  255  rm G
+  256  rm Global\ YouTube\ Statistics.csv 
+  257  c
+  258  cd
+  259  rm worksheet3
+  260  rmdir worksheet3
+  261  ls
+  262  mkdir worksheet3
+  263  cd worksheet3
+  264  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  265  sort -t"," -k8,8 -k16,16nr Global\ YouTube\ Statistics.csv >sort_data.csv
+  266  grep -E"United States|United Kingdom|India" sort_data.csv | uniq -f7 | head -3 > ws3.txt
+  267  ls
+  268  vi ws3.txt
+  269  sort -t"," -k8,8 -k16,16nr Global\ YouTube\ Statistics.csv > sort_data.csv
+  270  ls
+  271  grep -E"United States|United Kingdom|India" sort_data.csv | uniq -f7 | head -3 > ws3.txt
+  272  grep -E "United States|United Kingdom|India" sort_data.csv | uniq -f7 | head -3 > ws3.txt
+  273  vi ws3.txt
+  274  sort -t"," -k5,5 -k3,3nr Global\ YouTube\ Statistics.csv > sort_category.csv
+  275  grep -E "Sport|Education|Entertainment" sort_category.csv | uniq -f4 | head -3 >> ws3.txt 
+  276  history > cmds.log
