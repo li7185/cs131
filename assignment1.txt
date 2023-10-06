@@ -1,0 +1,9 @@
+1. Use mkdir assignment1, cd assignment1
+2. echo $SHELL to echo my current shell. echo $HOME to echo my home directory path
+3. my uid is 1142, and group name is zipengf23 by using id -u and id -gn
+4. I can "ls" and "ls -l" it but i can not create files under it.
+5. mkdir myDir2 myDir3
+6. touch myDir2/myFile.txt mv myDir2/myFile.txt myDir3/
+7. free -m, and total memory is 71367
+8. cat /etc/os-release, OS system Red Hat Enterprise Linux, ver 8.6
+9. ls -l /etc/os-release

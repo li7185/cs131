@@ -1,0 +1,80 @@
+Script started on 2023-09-21 16:27:41-04:0
+#creat assignment1 dir
+bash-4.4$ mkdir assignment1
+bash-4.4$ ls
+assignment1  cmds.log
+bash-4.4$ cd assignment1/
+#use echo $SHELL to print the path to the shell
+bash-4.4$ echo $SHEK[KLL
+/bin/bash
+#use echo $HOME to display the path to the home directory in the terminal
+bash-4.4$ echo $HOME
+/mnt/scratch/FA23_CS131_Ashish/zipengf23
+#use id -u to display user id
+bash-4.4$ i [Kd -u
+1142
+#use id -gn to display group name
+bash-4.4$ i -gn
+bash: i: command not found
+bash-4.4$ id-[K -gn
+zipengf23
+
+#using mkdir to create myDir
+bash-4.4$ mk[KyDir[K[K[K[Kkir m[K[K[K[Kdir myDIr[K[Kir
+#use chmod u-w myDir to remove the writing permission 
+bash-4.4$ ch [Kmodd[K u-w myDir/
+bash-4.4$ ls
+myDir
+bash-4.4$ ls -l
+total 4
+dr-xrwxr-x 2 zipengf23 zipengf23 4096 Sep 21 16:29 myDir
+bash-4.4$ cd myDir/
+bash-4.4$ touch test.txt
+touch: cannot touch 'test.txt': Permission denied
+bash-4.4$ cd -
+/mnt/scratch/FA23_CS131_Ashish/zipengf23/a1/assignment1
+#create myDir2 andd myDir3
+bash-4.4$ mk [Kdir myDir2 myDDir[K[K[Kir3
+#create myFile in myDIr2
+bash-4.4$ ti[Kouch myDir2/myFile.txt
+#move myFile to myDir3
+bash-4.4$ mv myDir2/myFile.txt myir[K[KDir3/
+bash-4.4$ cd myDir3
+bash-4.4$ ls
+myFile.txt
+bash-4.4$ cd -
+/mnt/scratch/FA23_CS131_Ashish/zipengf23/a1/assignment1
+#free the memory
+bash-4.4$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       11266        6820        1114       53280       56696
+Swap:          4119        1007        3112
+
+
+#cat /etc/os-release to display the os identity
+bash-4.4$ cat /etc/os-release 
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+#use ls -l /etc/os-release to find OS version information
+bash-4.4$ ls -l /etc/os-release 
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+bash-4.4$ exit
+exit
+
+Script done on 2023-09-21 16:32:31-04:00
