@@ -1,0 +1,12 @@
+  754  mkdir -p "Worksheet 5/United States"
+  755  for category in Music Entertainment Gaming Comedy; do grep "United States" Global\ YouTube\ Statistics.csv | awk -F"," '$8=="United States" && $5=="'$category'" {print $0}' > "Worksheet 5/United States/$category.txt"; done
+  756  cd Worksheet\ 5/United\ States/
+  757  nano Comedy.txt 
+  758  echo "Entries in Music: $(wc -l < "Worksheet 5/United States/Music.txt")" > ws5.txt
+  759  echo "Entries in Entertainment: $(wc -l < "Worksheet 5/United States/Entertainment.txt")" >> ws5.txt
+  760  echo "Entries in Gaming: $(wc -l < "Worksheet 5/United States/Gaming.txt")" >> ws5.txt
+  761  echo "Entries in Comedy: $(wc -l < "Worksheet 5/United States/Comedy.txt")" >> ws5.txt
+  762  ls
+  763  mv ws5.txt Worksheet\ 5/
+  764  cd Worksheet\ 5/
+  765  history > cmd.logs

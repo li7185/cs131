@@ -1,0 +1,9 @@
+find /etc -type f > one.txt 2> two.txt
+cut -d"," -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3 > Assignment2.txt
+ps -u $zipengf23
+vi file.txt
+ps -u $zipengf23
+q!
+ps -u $zipengf23
+ps -p 1
+ps aux
