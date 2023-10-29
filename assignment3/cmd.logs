@@ -1,0 +1,16 @@
+wc -l last.fake
+grep 'f23' last.fake > lastf23.fake
+wc -l lastf23.fake
+echo "The list of people who worked on Sunday are:" > task2.txt
+grep 'Sun' lastf23.fake | awk '{print $1}' | sort | uniq >> task2.txt
+echo "Kudos to these people for putting in the work" >> task2.txt
+echo "Night Owls List:" > task3.txt
+awk '($7 >= "23:" && $7 < "24:") || ($7 >= "00:" && $7 <= "04:") {print $1}' lastf23.fake | sort | uniq >> task3.txt
+echo "Night Owls are dope. Please ensure you get enough sleep though." >> task3.txt
+echo "Early Birds List:" > task4.txt
+awk '($7 >= "05:" && $7 <= "09:") {print $1}' lastf23.fake | sort | uniq >> task4.txt
+echo "Early Birds are dope. Please ensure you get enough sleep though." >> task4.txt
+awk '$1 ~ /^t/ {print $1}' lastf23.fake | sort | uniq > task5.txt
+awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake > task6.txt
+sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u > task7.txt
+
