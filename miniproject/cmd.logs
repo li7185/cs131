@@ -1,0 +1,23 @@
+echo Min budget: > peak.csv
+awk -F, 'NR>1{print $3, $0}' top_4000_movies_data.csv | sort -n | head -1 >> peak.csv 
+echo Max budget: >> peak.csv
+awk -F, 'NR>1{print $3, $0}' top_4000_movies_data.csv | sort -nr | head -1 >> peak.csv 
+echo Min Domestic Gross >> peak.csv 
+awk -F, 'NR>1{print $4, $0}' top_4000_movies_data.csv | sort -n | head -1 >> peak.csv 
+echo Max Domestic Gross >> peak.csv
+awk -F, 'NR>1{print $4, $0}' top_4000_movies_data.csv | sort -nr | head -1 >> peak.csv 
+echo Min Global Gross >> peak.csv
+awk -F, 'NR>1{print $5, $0}' top_4000_movies_data.csv | sort -n | head -1 >> peak.csv
+echo Max Global Gross >> peak.csv
+awk -F, 'NR>1{print $5, $0}' top_4000_movies_data.csv | sort -nr | head -1 >> peak.csv
+awk -F, 'NR>1{profit=$5-$3; print profit, $0}' top_4000_movies_data.csv | sort -nr | head -1 >> peak.csv #maximum profit
+awk -F, 'NR>1{profit=$5-$3; print profit, $0}' top_4000_movies_data.csv | sort -n | head -1 >> peak.csv #minimum profit
+
+#add profit column
+awk -F, 'BEGIN {OFS=","} {if(NR==1) print $0",Profit"; else print $0, $5-$3}' top_4000_movies_data.csv > top_4000_movies_data_profit.csv
+sed -i '1s/^/Release Date,Movie Title,Production Budget,Domestic Gross,Worldwide Gross,Profit\n/' top_4000_movies_data_profit.csv
+
+awk -F, 'NR>1 {sum+=$3; count++} END {print "Mean Production Budget: " sum/count}' top_4000_movies_data_profit.csv
+awk -F, 'NR>1 {sum+=$4; count++} END {print "Mean Domestic Gross: " sum/count}' top_4000_movies_data_profit.csv
+awk -F, 'NR>1 {sum+=$5; count++} END {print "Mean Worldwide Gross: " sum/count}' top_4000_movies_data_profit.csv
+awk -F, 'NR>1 {sum+=$(NF); count++} END {print "Mean Profit: " sum/count}' top_4000_movies_data_profit.csv
