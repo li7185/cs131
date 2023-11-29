@@ -23,7 +23,7 @@ awk -F, 'NR>1 {sum+=$5; count++} END {print "Mean Worldwide Gross: " sum/count}'
 awk -F, 'NR>1 {sum+=$(NF); count++} END {print "Mean Profit: " sum/count}' top_4000_movies_data_profit.csv
 
 #add ratio between production and global gross
-awk -F, 'BEGIN {OFS=","} {if (NR==1) {print $0,"Ratio"} else {print $0, ($3/$5)}}' top_4000_movies_data_profit.csv > updated_top_4000_movies_data_ratio.csv
+awk -F, 'BEGIN {OFS=","} {if (NR==1) {print $0,"Ratio"} else {print $0, ($5/$3)}}' top_4000_movies_data_profit.csv > updated_top_4000_movies_data_ratio.csv
 
 
 
