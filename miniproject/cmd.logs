@@ -25,5 +25,14 @@ awk -F, 'NR>1 {sum+=$(NF); count++} END {print "Mean Profit: " sum/count}' top_4
 #add ratio between production and global gross
 awk -F, 'BEGIN {OFS=","} {if (NR==1) {print $0,"Ratio"} else {print $0, ($5/$3)}}' top_4000_movies_data_profit.csv > updated_top_4000_movies_data_ratio.csv
 
+awk -F, 'NR>1 {print $6, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1nr | head -1
+2608899541 Avatar
+awk -F, 'NR>1 {print $6, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1n | head -1
+-158089766 The Irishman
 
+
+awk -F, 'NR>1 {print $7, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1nr | head -1
+75.5203 E.T. the Extra-Terrestrial
+awk -F, 'NR>1 {print $7, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1n | head -1
+0 Army of the Dead
 
