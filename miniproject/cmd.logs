@@ -36,3 +36,9 @@ awk -F, 'NR>1 {print $7, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, 
 awk -F, 'NR>1 {print $7, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1n | head -1
 0 Army of the Dead
 
+
+awk -F, 'NR>1 {sum+=$6; count++} END {print "Average Profit:", sum/count}' updated_top_4000_movies_data_ratio.csv
+Average Profit: 8.63876e+07
+awk -F, 'NR>1 {sum+=$7; count++} END {print "Average Ratio:", sum/count}' updated_top_4000_movies_data_ratio.csv
+Average Ratio: 2.83157
+
