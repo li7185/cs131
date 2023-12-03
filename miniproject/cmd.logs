@@ -13,16 +13,15 @@ awk -F, 'NR>1{print $5, $0}' top_4000_movies_data.csv | sort -nr | head -1 >> pe
 awk -F, 'NR>1{profit=$5-$3; print profit, $0}' top_4000_movies_data.csv | sort -nr | head -1 >> peak.csv #maximum profit
 awk -F, 'NR>1{profit=$5-$3; print profit, $0}' top_4000_movies_data.csv | sort -n | head -1 >> peak.csv #minimum profit
 
-#add profit column
-awk -F, 'BEGIN {OFS=","} {if(NR==1) {print $0",Profit"} else {print $0, ($5-$3)}}' top_4000_movies_data.csv > top_4000_movies_data_profit.csv
+
 
 awk -F, 'NR>1 {sum+=$3; count++} END {print "Mean Production Budget: " sum/count}' top_4000_movies_data_profit.csv
 awk -F, 'NR>1 {sum+=$4; count++} END {print "Mean Domestic Gross: " sum/count}' top_4000_movies_data_profit.csv
 awk -F, 'NR>1 {sum+=$5; count++} END {print "Mean Worldwide Gross: " sum/count}' top_4000_movies_data_profit.csv
 awk -F, 'NR>1 {sum+=$(NF); count++} END {print "Mean Profit: " sum/count}' top_4000_movies_data_profit.csv
-
-#add ratio between production and global gross
-[zipengf23@sjsu miniproject]$ vi cmd.logs 
+#add profit column
+awk -F, 'BEGIN {OFS=","} {if(NR==1) {print $0",Profit"} else {print $0, ($5-$3)}}' top_4000_movies_data.csv > top_4000_movies_data_profit.csv
+#add ratio between Profit and budget
 [zipengf23@sjsu miniproject]$ awk -F, 'BEGIN {OFS=","} {if (NR==1) {print $0,"Profit%"} else {print $0, ($6/$3)}}' top_4000_movies_data_profit.csv > updated_top_4000_movies_data_ratio.csv
 [zipengf23@sjsu miniproject]$ awk -F, 'NR>1 {print $6, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1nr | head -5
 2608899541 Avatar
