@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from google.colab import drive
+
+
+data = pd.read_csv("https://raw.githubusercontent.com/li7185/cs131/master/miniproject/top_4000_movies_data_modified.csv")
+data.head()
+
+plt.figure(figsize=(12, 8))
+plt.title('Profit% vs. Profit')
+plt.xlabel('Profit (1*10^9)')
+plt.ylabel('Profit% (Profit / Production Budget * 100)')
+sns.scatterplot(data, x='Profit', y='Profit%') 
