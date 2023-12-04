@@ -3,15 +3,6 @@ awk -F, 'BEGIN {OFS=","} {if(NR==1) {print $0",Profit"} else {print $0, ($5-$3)}
 #add ratio between Profit and budget
 [zipengf23@sjsu miniproject]$ awk -F, 'BEGIN {OFS=","} {if (NR==1) {print $0,"Profit%"} else {print $0, ($6/$3)}}' top_4000_movies_data_profit.csv > updated_top_4000_movies_data_ratio.csv
 
-[zipengf23@sjsu miniproject]$ awk -F, 'NR>1 {print $6, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1nr | head -5
-
-[zipengf23@sjsu miniproject]$ awk -F, 'NR>1 {print $6, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1n | head -5
-
-[zipengf23@sjsu miniproject]$ awk -F, 'NR>1 {print $7, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1nr | head -5
-
-[zipengf23@sjsu miniproject]$ awk -F, 'NR>1 {print $7, $2}' updated_top_4000_movies_data_ratio.csv | sort -t, -k1,1n | head -5
-
-
 awk -F, 'NR>1 {sum+=$6; count++} END {print "Average Profit: " sum/count}' updated_top_4000_movies_data_ratio.csv
 
 awk -F, 'NR>1 {sum+=$7; count++} END {print "Average Profit%: " sum/count}' updated_top_4000_movies_data_ratio.csv
